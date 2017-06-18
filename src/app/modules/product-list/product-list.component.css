@@ -1,0 +1,33 @@
+.products{
+    display: table-cell;
+    width: 100%;
+    vertical-align: top;
+    background: #eee;
+}
+
+.productList {
+    background: #eeeeee none repeat scroll 0 0;
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+}
+
+table{
+    border: 1px solid #ccc;
+    padding: 0;
+    border-spacing: 0;
+}
+
+table thead th{
+    background: #ccc;
+    height: 30px;
+    padding: 0 5px;
+}
+
+table td{
+    padding: 5px;
+}
+
+table tr.odd{
+    background: #ffffff;
+}

@@ -1,29 +1,10 @@
-import {Component, OnInit} from '@angular/core';
-import {ProductsService} from "./services/products.service";
-import {Product} from './models/product';
+import {Component} from '@angular/core';
 
 @Component({
-    selector: 'body',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit{
+export class AppComponent{
     title = 'Dmytro Dzyuba angulat application.';
-
-    products: Product[];
-
-    categories = [
-        'carrot',
-        'tomato',
-        'potato',
-    ];
-
-    constructor(
-        private service: ProductsService
-    ){ }
-
-    ngOnInit(){
-        this.products = this.service.getProducts();
-    }
 }

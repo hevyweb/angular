@@ -5,40 +5,13 @@
       <div class="logo">
         <h1>{{title}}</h1>
       </div>
-      <div class="searchCategory">
-        <input type="text" id="searchCategory" placeholder="Filter Category" role="search" ng-model="filterCategory">
-      </div>
-      <ul>
-        <li class="current">Show all</li>
-        <li *ngFor="let category of categories">{{category}}</li>
-      </ul>
+      <app-category-list></app-category-list>      
     </div>
   </aside>
   <div class="products">
     <div class="productSearch">
       <input type="text" id="productSearch" placeholder="Search product" />
     </div>
-    <div class="productList">
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Category</th>
-            <th>Available</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let product of products; let odd = odd; let even = even" [ngClass]="odd ? 'odd':'even'">
-            <td>{{product.name}}</td>
-            <td>{{product.description}}</td>
-            <td>{{product.price}}</td>
-            <td>{{categories[product.category]}}</td>
-            <td>{{product.isAvailable ? 'Yes': 'No'}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <app-product-list></app-product-list>
   </div>
 </div>
