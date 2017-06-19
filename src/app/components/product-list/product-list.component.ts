@@ -1,8 +1,8 @@
 import { Component, OnInit, Injectable } from '@angular/core';
-import { ProductsService } from "../services/products.service";
-import { CategoryService } from '../services/category.service';
-import { Product } from '../models/product';
-import { Category } from '../models/category';
+import { ProductsService } from "../../services/products.service";
+import { CategoryService } from '../../services/category.service';
+import { Product } from '../../models/product.model';
+import { Category } from '../../models/category.model';
 
 @Component({
   selector: 'app-product-list',

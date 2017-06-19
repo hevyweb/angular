@@ -14,6 +14,10 @@ aside{
     width: 256px;
 }
 
+.products{
+    height: 100%;
+}
+
 .logo{
     padding: 10px;
 }
@@ -32,62 +36,6 @@ h2{
     margin: 0;
     display: inline-block;
     padding-left: 15px;
-}
-
-.searchCategory{
-    padding: 0 10px;
-}
-
-#searchCategory{
-    width: 100%;
-    height: 28px;
-    padding: 0 10px;
-}
-
-ul{
-    padding: 0;
-    text-indent: 0;
-    list-style: none;
-    margin: 10px 0 0;
-}
-
-ul {
-    border-bottom: 1px solid #37414b;
-}
-ul > li {
-    border-bottom: 1px solid #1f262d;
-    border-top: 1px solid #37414b;
-    line-height: 35px;
-    padding: 0 20px;
-    color: #ccc;
-    cursor: pointer;
-    position: relative;
-}
-ul > li.active, ul > li:hover {
-    border-bottom: 1px solid #27a9e3;
-    border-top: 1px solid #27a9e3;
-    background-color: #27a9e3;
-    color: #fff;
-}
-
-ul > li.current:after{
-    content: ' ';
-    width: 0;
-    height: 0;
-    border-right: 10px solid #eeeeee;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 0 none;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 8px;
-}
-
-ul.edit > li:hover {
-    background-color: transparent !important;
-    border-bottom: 1px solid #1f262d;
-    border-top: 1px solid #37414b;
 }
 
 .productSearch{

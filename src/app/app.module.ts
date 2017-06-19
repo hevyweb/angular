@@ -1,19 +1,40 @@
+/**
+ * Core
+ */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-//import { ProductsService } from './services/products.service';
-//import { ProductListComponent } from './product-list/product-list.component';
+/**
+ * Services
+ */
+import { ProductsService } from './services/products.service';
+import { CategoryService } from './services/category.service';
+/**
+ * Components
+ */
+import { CategoryListComponent } from './components/category-list/category-list.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
+/**
+ * Main Component
+ */
 import { AppComponent } from './app.component';
-import { CategoriesModule } from './modules/categories.module';
+
 
 @NgModule({
   declarations: [
-    CategoriesModule,
+    CategoryListComponent,
+    ProductListComponent,
     AppComponent
-    //ProductListComponent
   ],
   imports: [
     BrowserModule
+  ],
+  providers: [
+    ProductsService,
+    CategoryService
+  ],
+  exports: [
+    ProductListComponent,
+    CategoryListComponent
   ],
   
   bootstrap: [AppComponent]
