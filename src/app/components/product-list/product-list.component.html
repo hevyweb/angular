@@ -15,7 +15,9 @@
           <td>{{product.description}}</td>
           <td>{{product.price}}</td>
           <td>{{categories[product.category].name}}</td>
-          <td>{{product.isAvailable ? 'Yes': 'No'}}</td>
+          <td><button *ngIf="product.isAvailable; else elseBlock" class="buy button" (click)="addToCart(product)">Buy</button>
+            <ng-template #elseBlock class="not_available">N/A</ng-template>
+          </td>
         </tr>
       </tbody>
     </table>

@@ -8,4 +8,13 @@ import {Component} from '@angular/core';
 
 export class AppComponent{
     title = 'Dmytro Dzyuba angulat application.';
+    public cart: any[];
+
+    constructor(){
+        this.cart = [];
+    }
+
+    openCart(){
+        console.log('cart opened');
+    }
 }

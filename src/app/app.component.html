@@ -11,6 +11,7 @@
     <div class="productSearch">
       <input type="text" id="productSearch" placeholder="Search product" />
     </div>
+    <div (click)="openCart()" *ngIf="cart.length>0">Your cart has {{cart.length}} products</div>
     <app-product-list></app-product-list>
   </div>
 </div>
